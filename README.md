@@ -17,7 +17,7 @@ I am sure that there are many other use cases for this as well.
 
 ---
 
-## Installation
+# Installation
 ### Pypi & pip:
 
 ```bash
@@ -33,7 +33,7 @@ $> python3 setup.py install
 
 ---
 
-## Usage:
+# Usage:
 #### Example: Reading from JSON file
 json file: `my_config.json`
 ```json
@@ -86,3 +86,35 @@ if config.section1.allow_guest:
 $> ./my_app.py
 Allowing Access
 ```
+
+#### Example: Read from yaml with env vars
+This is very useful if running an application in a Docker environment where things are set with environment variables. 
+
+yaml file: `my_config.yaml`
+```yaml
+admin_settings:
+    admin_username: admin
+    admin_password: 
+      env_var: ADMIN_PASSWORD
+```
+
+application: `my_app.py`
+```python
+from JSON2Obj import read_yaml_file
+config = read_yaml_file("my_config.yaml")
+
+if config.admin_settings:
+    print(config.admin_settings.admin_username)
+    print(config.admin_settings.admin_password)
+```
+
+```bash
+$> export ADMIN_PASSWORD="MySecurePassword"
+$>
+$> ./my_app.py
+admin
+MySecurePassword
+```
+
+# Documentation
+TODO: Link to read the docs
