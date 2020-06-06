@@ -1,0 +1,12 @@
+graft src/<<PACKAGE>>
+graft tests
+
+include README.md
+include requirements.txt
+
+
+include pyproject.toml setup.cfg
+include tox.ini
+
+recursive-exclude * __pycache__ *.py[cod]
+recursive-include src *.py

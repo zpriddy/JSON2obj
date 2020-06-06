@@ -1,0 +1,7 @@
+section_1:
+  item_1: 1
+  item_2:
+    key_a: a
+    key_b:
+      key_b_1: b1
+      key_b_2: b2

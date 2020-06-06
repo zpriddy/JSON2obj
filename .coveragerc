@@ -1,0 +1,14 @@
+[run]
+parallel = true
+source =
+    json2obj
+
+[paths]
+source =
+    src/json2obj
+    */src/json2obj
+    */site-packages/json2obj
+
+[report]
+show_missing = true
+precision = 2

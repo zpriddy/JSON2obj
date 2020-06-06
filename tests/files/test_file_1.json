@@ -1,0 +1,10 @@
+{
+  "allow_access": true,
+  "permissions": {
+    "full_access": true,
+    "edit": true
+  },
+  "custom": {
+    "items": ["a", "b", "c"]
+  }
+}
