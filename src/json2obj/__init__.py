@@ -4,5 +4,5 @@ __init__.py
 """
 
 from .json2obj import JSON2Obj
-from .json_file import read_json_file
-from .yaml import read_yaml_file
+from .json_file import JsonFile
+from .yaml_file import YamlFile

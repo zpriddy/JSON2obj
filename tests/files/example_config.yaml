@@ -1,0 +1,36 @@
+metadata:
+  name: example_config
+  author: Zachary Priddy
+  module: example.Module
+parameters:
+  username:
+    type: string
+    default: admin
+    description: username to use for connection
+    required: true
+  password:
+    type: string
+    description: password to use for account
+    required: true
+    example: mySecurePassword
+  server_addresses:
+    description: Server address to connect to server
+    type: list.string
+    example:
+      - 192.168.1.1
+      - 192.168.1.2
+    required: true
+options:
+  start_on_login:
+    type: bool
+    default: true
+    description: Start service on login
+    required: false
+  allow_guests:
+    type: bool
+    default: false
+    description: Start service on login
+    required: true
+    example: blah
+
+

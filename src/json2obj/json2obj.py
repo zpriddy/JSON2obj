@@ -12,7 +12,7 @@ from .env_vars import check_for_env_vars
 
 class JSON2Obj:
     def __init__(self, json_data: dict = None, env_var_function: Optional[Callable] = check_for_env_vars):
-        if not isinstance(json_data, dict):
+        if not isinstance(json_data, dict) and json_data is not None:
             raise TypeError("json_data must by type dict. If using a string call JSON2Obj.from_string().")
 
         self.__env_var_function: Callable = env_var_function

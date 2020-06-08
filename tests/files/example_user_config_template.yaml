@@ -1,0 +1,27 @@
+
+options:
+
+  # Start service on login
+    # This is a default value
+  start_on_login: true
+
+  # Start service on login
+    # This is a default value
+    # example: blah
+  allow_guests: false
+
+parameters:
+
+  # username to use for connection
+    # This is a default value
+  username: admin
+
+  # password to use for account
+    # This is a required value [password]
+    # example: mySecurePassword
+  password:
+
+  # Server address to connect to server
+    # This is a required value [server_addresses]
+    # example: ['192.168.1.1', '192.168.1.2']
+  server_addresses:
