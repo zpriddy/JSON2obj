@@ -95,7 +95,7 @@ class ConfigVariable:
         default_none_okay: bool = False,
         required: bool = False,
         example: str = None,
-        meta_data: dict = None,
+        metadata: dict = None,
         **kwargs,
     ):
         self.name = name
@@ -105,7 +105,7 @@ class ConfigVariable:
         self.default_none_okay = default_none_okay
         self.required = required
         self.example = example
-        self.meta_data = JSON2Obj(meta_data, None)
+        self.metadata = JSON2Obj(metadata, None)
         self._value = None
 
     @property

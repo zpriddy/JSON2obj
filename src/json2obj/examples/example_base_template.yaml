@@ -1,0 +1,16 @@
+metadata:
+  type:
+    custom
+  fields:
+    name:
+      required: true
+    author:
+      required: true
+    module:
+      required: false
+options:
+  type:
+    variable
+parameters:
+  type:
+    variable

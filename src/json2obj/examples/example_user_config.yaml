@@ -1,0 +1,11 @@
+parameters:
+  username: zpriddy
+  password: myPassword
+  server_addresses:
+    - 10.10.10.1
+    - 10.10.10.2
+options:
+  start_on_login: yes
+  allow_guests: no
+
+

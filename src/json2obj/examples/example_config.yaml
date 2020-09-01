@@ -26,8 +26,6 @@ options:
     default: true
     description: Start service on login
     required: false
-    metadata:
-      value1: 123
   allow_guests:
     type: bool
     default: false
